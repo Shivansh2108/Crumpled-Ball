@@ -3,12 +3,11 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
-var paper1,paper1Img,ground1,bin1,bin2Img,bin2,bin3;
+var paper1,ground1,bin1,bin2,bin3;
 
 function preload(){
 
-	bin2Img = loadImage("dustbingreen.png");
-  paper1Img = loadImage("paper.png");
+	
   
 }
 
@@ -39,11 +38,7 @@ function draw() {
   bin3.display();
   bin2.display();
   
-  imageMode(CENTER);
-  image(bin2Img,1030,480,220,200);
-
-  imageMode(CENTER);
-  image(paper1Img,paper1.body.position.x,paper1.body.position.y,75,75);
+  
   
   //drawSprites();
  
